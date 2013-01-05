@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_border"
+            android:orientation="vertical" >
+
+	   	<Button
+	   	    android:id="@+id/btnBindSinaWeibo"
+			style="@style/setting_btn"/>
+
+        <View style="@style/setting_btn_split"/>
+
+	   	<TextView
+	   	    android:id="@+id/tvVersionName"
+			style="@style/setting_tv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_gray_border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/llbtnOpinionWe"
+                style="@style/setting_btn_qyer_ll">
+                <ImageView
+					style="@style/setting_btn_qyer_iv"
+                    android:src="@drawable/ic_opinionwe" />
+                <TextView
+					style="@style/setting_btn_qyer_tv"
+                    android:text="@string/opinionwe"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBtnAppShare"
+				style="@style/setting_btn_qyer_ll">
+                <ImageView
+                    style="@style/setting_btn_qyer_iv"
+                    android:src="@drawable/ic_appshare" />
+                <TextView
+                    style="@style/setting_btn_qyer_tv"
+                    android:text="@string/appshare"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBtnFeedBack"
+                style="@style/setting_btn_qyer_ll">
+                <ImageView
+					style="@style/setting_btn_qyer_iv"
+                    android:src="@drawable/ic_ideafeedback" />
+                <TextView
+                    style="@style/setting_btn_qyer_tv"
+                    android:text="@string/feedBack"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/llQyerAppDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_border"
+            android:orientation="vertical"
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/more_qyerapp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.qyer.android.oneday.view.NoCacheGridView
+                android:id="@+id/gvQyerApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="72dp"
+                android:fadingEdge="none"
+                android:horizontalSpacing="2dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="auto_fit"
+                android:scrollbars="none"
+                android:scrollingCache="false"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+            <ProgressBar
+                android:id="@+id/pbQyerApp"
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRecommendAppDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_border"
+            android:orientation="vertical"
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/recommendApp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.qyer.android.oneday.view.NoCacheListView
+                android:id="@+id/lvRecommendApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"
+                android:divider="@color/graycc"
+                android:dividerHeight="1px"
+                android:scrollingCache="false" />
+
+            <ProgressBar
+                android:id="@+id/pbRecommendApp"
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+                    		 
+    </LinearLayout>
+</ScrollView>

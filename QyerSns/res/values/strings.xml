@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, QyerShareActivity!</string>
+    <string name="app_name">QyerShare</string>
+	<string name="loading_oauth_page">正在加载授权页面</string>
+	<string name="share_to_sina_weibo">分享到新浪微博</string>
+	<string name="weibo_send">发布</string>
+	<string name="confirm">确定</string>
+	<string name="cancel">取消</string>
+	<string name="giveup_edit">编辑内容尚未发送，确认返回？</string>
+	<color name="aa">#ffffffff</color>
+</resources>

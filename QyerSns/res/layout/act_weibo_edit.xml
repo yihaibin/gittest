@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F1E3"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@drawable/bg_gray_border"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/etWeiboContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:autoLink="all"
+            android:linksClickable="false"
+            android:textColorLink="#0000ff"
+            android:textSize="15sp"
+            android:gravity="top"
+            android:background="@null">
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvWordCount"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#A3A3A3"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvWordCount" 
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前账号:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="正在获取..."
+                android:textColor="#000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

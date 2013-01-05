@@ -1,0 +1,41 @@
+需要修改的地方:
+1.code中需要更改的地方
+	 1.EnvironmentUtil 的 目录管理
+ 	 2.替换 LogManager 的tag
+ 	 3.关闭 LogManager的开关
+ 	
+2.qyer账号相关
+	 1.更新应用的穷游id和secret,放在HttpParams中定义。
+	   template:id = abcd123, VAL_CLIENT_SECRET = a88637d05a706c33278a
+
+3.drawable
+	 1.4个app icon 36 48 72 108
+	 2.cover(720p)最好在各分辨率目录下分别存放
+	
+4.新浪微博
+	 1.账号定义(在context包下的Constant接口中定义)
+		public static final String APP_KEY_WEIBO_SINA = "template123456";
+		public static final String APP_SEC_WEIBO_SINA = "template123456";
+		
+	 2.确定新浪后台callback的链接为:http://www.sina.com
+	 3.app的下载链接(在context包下的Constant接口中定义)
+	 4.app的分享文案(string文件中)
+	 5.替换qyersnslib的titlebar使用的资源文件
+	  
+
+5.微信
+	 1.账号定义(在context包下的Constant接口中定义)	
+		public static final String APP_KEY_WEIXIN = "template123456";
+		public static final String APP_SEC_WEIXIN = "template123456";
+	
+	 2.微信后台接口包名填写
+	 3.微信的appkey的MD5填写
+	 4.定义icon108的app icon 供微信使用
+	 5.app的下载链接(在context包下的Constant接口中定义)
+	 6.app的分享文案(string文件中)
+		
+6.友盟统计
+	 1.在清单文件中配置友盟的app key
+	 2.打开BaseActivity onCreate中注释的的 Umeng.onError
+	 3.完成友盟的事件(onPuase,onResume)
+	

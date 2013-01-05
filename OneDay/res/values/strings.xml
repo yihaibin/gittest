@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">template app</string>
+    <string name="share_AppDesc">分享文案，下载地址：%s</string>
+        
+    <!-- more -->
+    <string name="back">返回</string>
+    <string name="setting">设置</string>
+    <string name="weibo_sina_binded">绑定新浪微博</string>
+    <string name="weibo_sina_unbind">解除新浪微博绑定</string>
+	<string name="unbind_SinaWeiboAccount">确定要解除新浪微博绑定吗？</string>    
+    <string name="versionName">版本号：%s</string>
+    <string name="opinionwe">评价我们</string>
+    <string name="appshare">应用分享</string>
+    <string name="feedBack">意见反馈</string>    
+    <string name="more_qyerapp">相关应用</string>
+    <string name="send">发送</string>
+    <string name="sending">正在发送</string>
+    <string name="visitor">游客</string>
+    <string name="recommendApp">推荐应用</string>
+        
+    <string name="feedBack_content"  formatted="false">设备名称：%s|系统版本：android %s|应用版本：%s|用户：%s|内容：%s</string>
+    <string name="share_email_subject">%sAPP分享</string>
+        
+    <!-- toast -->    
+    <string name="toast_initSuccess">初始化成功</string>
+    <string name="toast_initFailed">初始化失败</string>
+    <string name="toast_noInternet">请检查网络连接</string>
+    <string name="toast_internet_timeout">网络连接超时</string>
+    <string name="toast_no_recommendApp">暂无推荐应用</string>
+    
+ 	<string name="toast_bindSina_succeed">新浪微博绑定成功</string>
+	<string name="toast_bindSina_failed">新浪微博绑定失败</string>
+		  
+	<string name="toast_current_new_version">当前已是最新版本</string>
+	<string name="toast_connect_timeout">连接超时</string>
+	<string name="toast_downloadSuccess">下载成功</string>
+	<string name="toast_downloadFailed">下载失败</string>	 
+		
+	<string name="toast_pleaseInputFull">请完整填写</string>
+	<string name="toast_feedback_success">意见反馈成功</string>
+	<string name="toast_feedback_failed">意见反馈失败</string> 	
+	
+	<string name="toast_share_success">分享成功</string>    
+	<string name="toast_share_failed">分享失败</string>	
+	<string name="toast_weibo_repeat">提交重复内容</string>
+	<string name="toast_weibo_similarty">提交相似内容</string>
+	<string name="toast_weibo_out_limit">发布内容过于频繁</string>
+	<string name="toast_weibo_token_expired">账号过期，请重新登录</string>
+	<string name="toast_no_weixin">亲！您还没安装微信哦 ~</string>
+	<string name="toast_no_weixin4_2">亲！要升级到微信4.2才能分享到朋友圈哦~</string>
+</resources>
